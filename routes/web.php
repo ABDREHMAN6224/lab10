@@ -22,3 +22,5 @@ Route::post('/logout', [UserController::class, 'logout']);
 
 Route::get("/sessions", [ClassesController::class, 'sessions'])->middleware('auth');
 Route::get("/attendance/{class}", [AttendanceController::class, 'class'])->name('attendance.show')->middleware('auth');
+Route::patch("/attendance/{class}/{student}", [AttendanceController::class, 'update'])->name('attendance.update')->middleware('auth');
+

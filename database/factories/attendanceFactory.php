@@ -17,8 +17,8 @@ class attendanceFactory extends Factory
     public function definition(): array
     {
         return [
-            'student_id' => fake()->numberBetween(1, 10),
-            'class_id' => fake()->numberBetween(1, 10),
+            'student_id' => fake()->randomElement([138]),
+            'class_id' => fake()->randomElement([135,159,144,140,151]),
             'date' => fake()->date(),
             'is_present'=> fake()->boolean(),
             'reason' => fake()->sentence(),

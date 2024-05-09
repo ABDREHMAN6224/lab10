@@ -1,6 +1,6 @@
 <x-layout>
     <div class="flex flex-col h-full p-16 overflow-hidden overflow-y-scroll">
-        <div class="flex items-center justify-center w-full bg-white gap-8">
+        <div class="flex items-center justify-center w-full bg-white gap-8 flex-wrap">
             @foreach($classes as $class)
             <div class="bg-white rounded-lg shadow-lg p-4 w-1/4 cursor-pointer"
                 onclick="#"

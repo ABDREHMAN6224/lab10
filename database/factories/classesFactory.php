@@ -21,7 +21,7 @@ class classesFactory extends Factory
             'start_time' => fake()->time('H:i:s', '08:00:00'),
             'end_time' => fake()->time('H:i:s', '20:00:00'),
             'creditHours' => fake()->numberBetween(2,4),
-            'teacher_id' => fake()->numberBetween(1, 10)
+            'teacher_id' => fake()->numberBetween(111, 120)
         ];
     }
 }

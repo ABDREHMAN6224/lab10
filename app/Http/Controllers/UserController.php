@@ -65,7 +65,6 @@ class UserController extends Controller
     public function class()
     {
         $classAttendance = attendance::where('student_id',auth()->id())->where('class_id',request('class'))->join('classes','classes.id','=','attendances.class_id')->orderBy('attendances.created_at','asc')->get();
-        // add fields such as total_conducted and totaal attended and average attendance
         $classAttendance->total_conducted = $classAttendance->count();
         $classAttendance->total_attended = $classAttendance->sum('is_present');
         $classAttendance->average = $classAttendance->total_attended/$classAttendance->total_conducted*100;

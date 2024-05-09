@@ -135,5 +135,30 @@
         @endif
       </div>
     </form>
+    <div class="absolute bottom-0 right-0 p-4">
+        <p class="text-xs text-gray-700">
+          <h3 class="text-2xl text-center text-gray-800 mb-8">
+            Demo Credentials
+          </h3>
+            <br>
+            Teacher:
+            <br>
+            Email:
+            mraz.cathryn@example.net            <br>
+            Password:
+            password
+            <br>
+            <br>
+            <br>w
+            Student:
+            <br>
+            Email:
+            neal08@example.org            <br>
+            Password:
+            password
+        </p>
+    </div>
+
+
   </div>
 
